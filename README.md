@@ -1,15 +1,64 @@
-# VIU_20GIAR_ACTIVIDAD
+# VIU 20GIAR - Actividad
 
-Proyecto de metodologias de desarrollo y despliegue de aplicaciones para ciencia de datos: 
+Proyecto de Metodologías de Desarrollo y Despliegue de Aplicaciones para Ciencia de Datos.
 
-### 1. Introducción (2 min) - Nombre del proyecto y equipo - Problema que resuelve - Tecnologías principales usadas 
+## Actividad solicitada
 
-### 2. Arquitectura del Sistema (3 min) - Diagrama de arquitectura (obligatorio) - Flujo de datos desde la fuente hasta el consumidor - Decisiones de diseño y por qué las tomasteis 
+La presentación debe cubrir los siguientes puntos:
 
-### 3. Implementación (5 min) - Demostración en vivo del pipeline funcionando - Código más relevante (2-3 snippets) - Dificultades encontradas y cómo las resolvisteis 
+### 1. Introducción (2 min)
+- Nombre del proyecto y equipo
+- Problema que resuelve
+- Tecnologías principales usadas
 
-### 4. Metodología Ágil Aplicada (2 min) - Cómo organizasteis el trabajo (SCRUM/Kanban) - Sprints completados y backlog - Velocidad del equipo y retrospectiva 
+### 2. Arquitectura del Sistema (3 min)
+- Diagrama de arquitectura (obligatorio)
+- Flujo de datos desde la fuente hasta el consumidor
+- Decisiones de diseño y por qué se tomaron
 
-### 5. Resultados y Métricas (3 min) - Métricas de negocio y técnicas alcanzadas - Qué funciona, qué falta, qué mejoraríais - Comparación con el plan inicial 
+### 3. Implementación (5 min)
+- Demostración en vivo del pipeline funcionando
+- Código más relevante (2-3 snippets)
+- Dificultades encontradas y cómo se resolvieron
 
-### 6. Conclusiones (2 min) - Aprendizajes principales - Próximos pasos si continuarais el proyecto
+### 4. Metodología Ágil Aplicada (2 min)
+- Cómo se organizó el trabajo (SCRUM/Kanban)
+- Sprints completados y backlog
+- Velocidad del equipo y retrospectiva
+
+### 5. Resultados y Métricas (3 min)
+- Métricas de negocio y técnicas alcanzadas
+- Qué funciona, qué falta, qué se mejoraría
+- Comparación con el plan inicial
+
+### 6. Conclusiones (2 min)
+- Aprendizajes principales
+- Próximos pasos si se continuara el proyecto
+
+---
+
+## Sobre el proyecto
+
+### Financial Dashboard
+
+Aplicación web de tipo Single Page Application (SPA) que muestra un dashboard financiero de stocks. Permite al usuario autenticarse con credenciales predefinidas y visualizar gráficos de precios y volumen de acciones, con filtros por ticker y rango temporal.
+
+Los datos se obtienen de la API gratuita de Alpha Vantage, con datos mock como fallback.
+
+### Tecnologías
+
+- **Frontend:** React + Vite
+- **Gráficos:** Recharts
+- **Datos:** Alpha Vantage API
+- **Hosting:** GitHub Pages (SPA estática)
+
+### Metodología
+
+El trabajo se organiza utilizando **Kanban** con tickets detallados en [KANBAN.md](KANBAN.md). Cada ticket representa una unidad de trabajo independiente que se desarrolla en su propia feature branch y se integra a `main` mediante Pull Requests con revisión obligatoria.
+
+### Pipelines CI/CD
+
+El proyecto cuenta con dos pipelines de GitHub Actions:
+
+- **CI (feature branches):** Se ejecuta en cada push a ramas de feature. Corre linting (ESLint) y tests (Vitest) automáticamente. El PR no puede mergearse si el pipeline falla.
+- **CD (main):** Se ejecuta en cada merge a `main`. Hace build de producción y despliega automáticamente a GitHub Pages.
