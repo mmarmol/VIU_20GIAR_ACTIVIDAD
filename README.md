@@ -54,7 +54,7 @@ Los datos se obtienen de la API gratuita de Alpha Vantage, con datos mock como f
 
 ### Metodología
 
-El trabajo se organiza utilizando **Kanban** con tickets detallados en [KANBAN.md](KANBAN.md). Cada ticket representa una unidad de trabajo independiente que se desarrolla en su propia feature branch y se integra a `main` mediante Pull Requests con revisión obligatoria.
+El trabajo se organiza utilizando **Kanban** con tickets gestionados en [Trello](https://trello.com/b/tBDHhGKS/dashboard-financiero-kanban). Cada ticket representa una unidad de trabajo independiente que se desarrolla en su propia feature branch y se integra a `main` mediante Pull Requests con revisión obligatoria.
 
 ### Pipelines CI/CD
 
