@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import PriceChart from '../components/PriceChart'
+import VolumeChart from '../components/VolumeChart'
 import { getStockData } from '../services/stockService'
 import './Dashboard.css'
 
@@ -25,7 +26,10 @@ export default function Dashboard() {
           {loading ? (
             <p>Cargando datos...</p>
           ) : (
-            <PriceChart data={stockData} />
+            <>
+              <PriceChart data={stockData} />
+              <VolumeChart data={stockData} />
+            </>
           )}
         </section>
       </main>
