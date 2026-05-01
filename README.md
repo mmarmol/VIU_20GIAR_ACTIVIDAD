@@ -120,4 +120,4 @@ La aplicación estará disponible en `http://localhost:5173`
 ### Documentación adicional
 
 - [ARQUITECTURA.md](ARQUITECTURA.md) - Arquitectura del sistema, decisiones de diseño y diagramas
-- [CI_CD_GUIDE.md](CI_CD_GUIDE.md) - Guía de los pipelines CI/CD para el equipo
+- [GUIA_EQUIPO.md](GUIA_EQUIPO.md) - Guía interna del proyecto para el equipo
