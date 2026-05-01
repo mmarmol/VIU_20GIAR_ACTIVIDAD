@@ -62,3 +62,62 @@ El proyecto cuenta con dos pipelines de GitHub Actions:
 
 - **CI (feature branches):** Se ejecuta en cada push a ramas de feature. Corre linting (ESLint) y tests (Vitest) automáticamente. El PR no puede mergearse si el pipeline falla.
 - **CD (main):** Se ejecuta en cada merge a `main`. Hace build de producción y despliega automáticamente a GitHub Pages.
+
+---
+
+## Uso del Dashboard
+
+### Acceso
+
+La aplicación está desplegada en: https://mmarmol.github.io/VIU_20GIAR_ACTIVIDAD/
+
+**Credenciales de acceso:**
+
+| Campo | Valor |
+|-------|-------|
+| Usuario | `administrador` |
+| Contraseña | `viu2026` |
+
+### Funcionalidades
+
+Al iniciar sesión se accede al dashboard financiero con las siguientes funcionalidades:
+
+**Gráfico de precio de cierre:** Gráfico de línea temporal que muestra la evolución del precio de cierre de la acción seleccionada. Incluye tooltip interactivo que muestra fecha y precio al pasar el cursor.
+
+**Gráfico de volumen de operaciones:** Gráfico de barras que muestra el volumen diario de operaciones de la acción seleccionada. El eje Y está formateado en millones (M).
+
+**Filtro por ticker:** Selector desplegable para elegir entre las acciones disponibles:
+- AAPL (Apple)
+- GOOGL (Google)
+- MSFT (Microsoft)
+- AMZN (Amazon)
+- TSLA (Tesla)
+
+**Filtro por rango temporal:** Botones para filtrar el periodo de datos visualizado:
+- 1S (1 semana)
+- 1M (1 mes)
+- 3M (3 meses) - seleccionado por defecto
+- 6M (6 meses)
+- 1A (1 año)
+
+**Cerrar sesión:** Botón en la esquina superior derecha que cierra la sesión y redirige a la pantalla de login.
+
+### Datos
+
+Los datos se obtienen de la API de Alpha Vantage (tier gratuito, 25 requests/día). Cuando la API no está disponible o se excede el límite, la aplicación utiliza datos mock generados automáticamente que simulan un año de cotizaciones.
+
+### Ejecución local
+
+```bash
+git clone https://github.com/mmarmol/VIU_20GIAR_ACTIVIDAD.git
+cd VIU_20GIAR_ACTIVIDAD
+npm install
+npm run dev
+```
+
+La aplicación estará disponible en `http://localhost:5173`
+
+### Documentación adicional
+
+- [ARQUITECTURA.md](ARQUITECTURA.md) - Arquitectura del sistema, decisiones de diseño y diagramas
+- [CI_CD_GUIDE.md](CI_CD_GUIDE.md) - Guía de los pipelines CI/CD para el equipo
