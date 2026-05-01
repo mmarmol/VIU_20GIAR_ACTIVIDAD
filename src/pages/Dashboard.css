@@ -9,7 +9,6 @@
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  flex: 1;
 }
 
 .dashboard-filters {
@@ -20,14 +19,7 @@
 }
 
 .dashboard-charts {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  flex: 1;
-}
-
-@media (min-width: 768px) {
-  .dashboard-charts {
-    grid-template-columns: 1fr 1fr;
-  }
 }
