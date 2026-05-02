@@ -155,10 +155,10 @@ En un proyecto real, el CI/CD nos da estas ventajas:
 Si tenes que explicar esto en clase, los puntos clave son:
 
 1. **Hicimos una app web** que muestra graficos financieros con React
-2. **Usamos Kanban** para organizar las tareas del proyecto
+2. **Usamos Scrum** para organizar las tareas del proyecto
 3. **Trabajamos con dos ramas**: `dev` para desarrollar y `main` para produccion
 4. **Tenemos dos pipelines automaticos**:
    - **CI**: verifica el codigo cada vez que lo subimos (lint + tests)
    - **CD**: publica la app automaticamente cuando pasamos codigo a main
 5. **La app esta publicada** en GitHub Pages sin necesidad de un servidor propio
-6. **Todo es automatico**: escribimos codigo, lo subimos, y si esta bien, se publica solo
+6. **Todo es automatico**: escribimos codigo, lo subimos, y si está bien, se publica solo
