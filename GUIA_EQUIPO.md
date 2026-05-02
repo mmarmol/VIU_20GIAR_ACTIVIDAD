@@ -30,7 +30,7 @@ La app esta publicada en: https://mmarmol.github.io/VIU_20GIAR_ACTIVIDAD/
 
 ## Metodologia de trabajo
 
-Usamos **Scrum** para organizar las tareas. Cada tarea (ticket) se fue moviendo de "Por hacer" a "En progreso" a "Hecho" en un tablero de Trello en el orden de los sprints definidos. Hemos usado 2 sprints, el primero para desarrollar lo esencial para garantizar funcionalidad y agilidad en las modificaciones que se realicen en el segundo sprint y lo segundo para darle "vida" a la web.
+Usamos **Scrum** para organizar las tareas. Cada tarea (ticket) se fue moviendo de "Por hacer" a "En progreso" a "Hecho" en un tablero de Trello en el orden de los sprints definidos. Hemos usado 2 sprints, el primero para desarrollar lo esencial para garantizar funcionalidad y agilidad en las modificaciones que se realicen en el segundo sprint y el segundo sprint para darle "vida" a la web.
 
 Las tareas las gestionamos en: https://trello.com/b/tBDHhGKS/dashboard-financiero-kanban
 
